@@ -26,14 +26,16 @@ enum KWuXing{
 
 void zd_cpp1stDemo();
 int cinAndCoutTest();
+int cinAndCoutTest2();
 
 int main(int argc, const char * argv[]) {
     
     // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "input pls:\n";
     
 //    zd_cpp1stDemo();
-    cinAndCoutTest();
+//    cinAndCoutTest();
+    cinAndCoutTest2();
     return 0;
 }
 
@@ -95,5 +97,23 @@ int cinAndCoutTest() {
         break;
     }
     return 0;
+}
+
+int cinAndCoutTest2(){
+    int a;
+    long int b;
+    char c;
+    float d;
+    double e;
+    
+    cin >> a >> b >> c >> d >> e;
+    cout << a << endl << b << endl << c << endl;
+    
+    //cout 不能指定打印类型。需要指定打印类型时（如%.3f），只能用printf
+//    << "%.3f",d << endl << "%.6f",e << endl;
+    
+    printf("%.3f\n", d);
+    printf("%.9f\n", e);
+    return 0;;
 }
 
