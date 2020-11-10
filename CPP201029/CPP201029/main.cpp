@@ -27,15 +27,21 @@ enum KWuXing{
 void zd_cpp1stDemo();
 int cinAndCoutTest();
 int cinAndCoutTest2();
+int ifTest();
+int forTest();
 
 int main(int argc, const char * argv[]) {
     
     // insert code here...
     std::cout << "input pls:\n";
     
-//    zd_cpp1stDemo();
-//    cinAndCoutTest();
-    cinAndCoutTest2();
+    //    zd_cpp1stDemo();
+    //    cinAndCoutTest();
+    //    cinAndCoutTest2();
+    
+//    ifTest();
+
+    forTest();
     return 0;
 }
 
@@ -110,10 +116,84 @@ int cinAndCoutTest2(){
     cout << a << endl << b << endl << c << endl;
     
     //cout 不能指定打印类型。需要指定打印类型时（如%.3f），只能用printf
-//    << "%.3f",d << endl << "%.6f",e << endl;
+    //    << "%.3f",d << endl << "%.6f",e << endl;
     
     printf("%.3f\n", d);
     printf("%.9f\n", e);
     return 0;;
 }
 
+int ifTest(){
+    int i;
+    cin >> i;
+    
+    if (1 == i) {
+        cout << "one" << endl;
+    }else if(2 == i){
+        cout << "two" << endl;
+    }else if(3 == i){
+        cout << "three" << endl;
+    }else if(4 == i){
+        cout << "four" << endl;
+    }else if(5 == i){
+        cout << "five" << endl;
+    }else if(6 == i){
+        cout << "six" << endl;
+    }else if(7 == i){
+        cout << "seven" << endl;
+    }else if(8 == i){
+        cout << "eight" << endl;
+    }else if(9 == i){
+        cout << "nine" << endl;
+    }else{
+        cout << "Greater than 9" << endl;
+    }
+    //    switch (a) {
+    //        case 1 :
+    //            cout << "one";
+    //            break;
+    //        default:
+    //            cout << "Greater than 9" << endl;
+    //            break;
+    //    }
+    return 0;
+}
+
+int forTest(){
+    int a, b;
+    cin >> a >> b;
+    a = a < b ? a : b;
+    b = a < b ? b : a;
+    for(int i = a; i <= b; i++){
+        if (i < 10) {
+            if (1 == i) {
+                cout << "one" << endl;
+            }else if(2 == i){
+                cout << "two" << endl;
+            }else if(3 == i){
+                cout << "three" << endl;
+            }else if(4 == i){
+                cout << "four" << endl;
+            }else if(5 == i){
+                cout << "five" << endl;
+            }else if(6 == i){
+                cout << "six" << endl;
+            }else if(7 == i){
+                cout << "seven" << endl;
+            }else if(8 == i){
+                cout << "eight" << endl;
+            }else if(9 == i){
+                cout << "nine" << endl;
+            }else{
+                cout << "非法数字,必须是正数" << endl;
+            }
+        }else{
+            if(0 == i % 2){
+                cout << "even" << endl;
+            }else{
+                cout << "odd" << endl;
+            }
+        }
+    }
+    return 0;
+}
