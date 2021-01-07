@@ -7,12 +7,19 @@
 
 //c++中，头文件不再以 .h结尾
 #include <iostream>
+#include "const.hpp"
 
 //using  std::cin;
 using namespace std;
 
 void const_castTest();
 int twoMultiply(int* a);
+
+void p_swap(int a, int b);
+void p_swapRef(int& a, int& b);
+void p_swapPointer(int* a, int* b);
+int& p_variableRef1(int& a);
+void referenceTest();
 
 //带默认值的函数如果有声明:1.必须在声明中指定默认值；2.声明可省略形参名；3.带默认值的参数必须放在最右
 int max(int a, int b){
@@ -38,12 +45,40 @@ int main(int argc, const char * argv[]) {
 //    funcTest(7,8);
 //    funcTest(7,8,9);
     
-    funcTest2(1);
-    c = 4;
-    d = 9;
-    funcTest2(1);
+//    funcTest2(1);
+//    c = 4;
+//    d = 9;
+//    funcTest2(1);
+    
+//    referenceTest();
+    
+    testConst();
     
     return 0;
+}
+
+
+void referenceTest(){
+    //引用
+    int a = 1, b = 2;
+    cout << "原始值：" << a << "," << b << endl;
+    
+    p_swap(a, b);
+    cout << "第1次尝试交换后：" << a << "," << b << endl;
+    
+    //传入的形参依旧是 变量，不是变量地址！
+    p_swapRef(a, b);
+    cout << "第2次尝试交换后：" << a << "," << b << endl;
+    
+    p_swapPointer(&a, &b);
+    cout << "第3次尝试交换后：" << a << "," << b << endl;
+    
+    int e = 2;
+    int& f = e;
+    
+    //引用 可以作为左值
+    p_variableRef1(f) = 3;
+    cout << "e：" << e << endl;
 }
 
 void funcTest2(int x, int y, int z){
@@ -99,4 +134,28 @@ void const_castTest(){
 //对于参数是指针的函数，传入的实参如果为 const 类型，需要转换为非 const 类型传入，用 const_cast 转换
 int twoMultiply(int* a){
     return 2 * *a;
+}
+
+//参数不是引用或地址时，无法改变外界实参变量的值
+void p_swap(int a, int b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+void p_swapRef(int& a, int& b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+//c 指针实现交换
+void p_swapPointer(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int& p_variableRef1(int& a){
+    return a;
 }
