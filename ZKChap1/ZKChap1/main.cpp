@@ -8,6 +8,7 @@
 //c++中，头文件不再以 .h结尾
 #include <iostream>
 #include "const.hpp"
+#include "funcRelated.hpp"
 
 //using  std::cin;
 using namespace std;
@@ -20,6 +21,7 @@ void p_swapRef(int& a, int& b);
 void p_swapPointer(int* a, int* b);
 int& p_variableRef1(int& a);
 void referenceTest();
+void funcReloadTest();
 
 //带默认值的函数如果有声明:1.必须在声明中指定默认值；2.声明可省略形参名；3.带默认值的参数必须放在最右
 int max(int a, int b){
@@ -52,11 +54,26 @@ int main(int argc, const char * argv[]) {
     
 //    referenceTest();
     
-    testConst();
+//    testConst();
+    
+//    simpleFunc();
+    funcReloadTest();
     
     return 0;
 }
 
+void funcReloadTest(){
+    int aI = 1, bI = 2;
+    float cF = 3.1, dF = 4.1;
+    double eD = 4.1, fD = 5.5;
+    
+    cout <<  bigger(aI, bI) << endl
+    << bigger(aI, cF) << endl
+    << bigger(cF, aI) << endl
+    << bigger(cF, dF) << endl
+//    << bigger(cF, eD) << endl//函数重载方法时，如果存在类型转换，必须避免二义性，否则报错。
+    << bigger(eD, fD) << endl;
+}
 
 void referenceTest(){
     //引用
