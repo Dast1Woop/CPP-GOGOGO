@@ -10,6 +10,8 @@
 		C2FEDE2825A3183C00A77B87 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE2725A3183C00A77B87 /* main.cpp */; };
 		C2FEDE3E25A6E15900A77B87 /* const.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE3C25A6E15900A77B87 /* const.cpp */; };
 		C2FEDE4325A70CBB00A77B87 /* funcRelated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE4125A70CBB00A77B87 /* funcRelated.cpp */; };
+		C2FEDE4825A8099A00A77B87 /* DynamicMemoryNew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE4625A8099A00A77B87 /* DynamicMemoryNew.cpp */; };
+		C2FEDE4F25A8430800A77B87 /* StringRelated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE4D25A8430800A77B87 /* StringRelated.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		C2FEDE3D25A6E15900A77B87 /* const.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = const.hpp; sourceTree = "<group>"; };
 		C2FEDE4125A70CBB00A77B87 /* funcRelated.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = funcRelated.cpp; sourceTree = "<group>"; };
 		C2FEDE4225A70CBB00A77B87 /* funcRelated.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = funcRelated.hpp; sourceTree = "<group>"; };
+		C2FEDE4625A8099A00A77B87 /* DynamicMemoryNew.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicMemoryNew.cpp; sourceTree = "<group>"; };
+		C2FEDE4725A8099A00A77B87 /* DynamicMemoryNew.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DynamicMemoryNew.hpp; sourceTree = "<group>"; };
+		C2FEDE4D25A8430800A77B87 /* StringRelated.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringRelated.cpp; sourceTree = "<group>"; };
+		C2FEDE4E25A8430800A77B87 /* StringRelated.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringRelated.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,10 @@
 				C2FEDE3C25A6E15900A77B87 /* const.cpp */,
 				C2FEDE4225A70CBB00A77B87 /* funcRelated.hpp */,
 				C2FEDE4125A70CBB00A77B87 /* funcRelated.cpp */,
+				C2FEDE4725A8099A00A77B87 /* DynamicMemoryNew.hpp */,
+				C2FEDE4625A8099A00A77B87 /* DynamicMemoryNew.cpp */,
+				C2FEDE4E25A8430800A77B87 /* StringRelated.hpp */,
+				C2FEDE4D25A8430800A77B87 /* StringRelated.cpp */,
 			);
 			path = ZKChap1;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FEDE4325A70CBB00A77B87 /* funcRelated.cpp in Sources */,
+				C2FEDE4825A8099A00A77B87 /* DynamicMemoryNew.cpp in Sources */,
+				C2FEDE4F25A8430800A77B87 /* StringRelated.cpp in Sources */,
 				C2FEDE2825A3183C00A77B87 /* main.cpp in Sources */,
 				C2FEDE3E25A6E15900A77B87 /* const.cpp in Sources */,
 			);
@@ -251,6 +263,7 @@
 		C2FEDE2C25A3183C00A77B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5MCKBCJ7H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -261,6 +274,7 @@
 		C2FEDE2D25A3183C00A77B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5MCKBCJ7H;
 				ENABLE_HARDENED_RUNTIME = YES;

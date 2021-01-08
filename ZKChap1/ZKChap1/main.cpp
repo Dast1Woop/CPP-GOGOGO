@@ -9,6 +9,8 @@
 #include <iostream>
 #include "const.hpp"
 #include "funcRelated.hpp"
+#include "DynamicMemoryNew.hpp"
+#include "StringRelated.hpp"
 
 //using  std::cin;
 using namespace std;
@@ -57,7 +59,13 @@ int main(int argc, const char * argv[]) {
 //    testConst();
     
 //    simpleFunc();
-    funcReloadTest();
+//    funcReloadTest();
+    
+//    dynamicMemoryNewTest();
+    
+//    stringOperate();
+    stringOperate1();
+    
     
     return 0;
 }
