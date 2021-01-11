@@ -11,6 +11,7 @@
 #include "funcRelated.hpp"
 #include "DynamicMemoryNew.hpp"
 #include "StringRelated.hpp"
+#include "ProgramDesignTask.hpp"
 
 //using  std::cin;
 using namespace std;
@@ -64,8 +65,8 @@ int main(int argc, const char * argv[]) {
 //    dynamicMemoryNewTest();
     
 //    stringOperate();
-    stringOperate1();
-    
+//    stringOperate1();
+    programDesignTask();
     
     return 0;
 }

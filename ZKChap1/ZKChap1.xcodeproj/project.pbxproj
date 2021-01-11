@@ -12,6 +12,7 @@
 		C2FEDE4325A70CBB00A77B87 /* funcRelated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE4125A70CBB00A77B87 /* funcRelated.cpp */; };
 		C2FEDE4825A8099A00A77B87 /* DynamicMemoryNew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE4625A8099A00A77B87 /* DynamicMemoryNew.cpp */; };
 		C2FEDE4F25A8430800A77B87 /* StringRelated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE4D25A8430800A77B87 /* StringRelated.cpp */; };
+		C2FEDE5D25ABFF6D00A77B87 /* ProgramDesignTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FEDE5B25ABFF6D00A77B87 /* ProgramDesignTask.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		C2FEDE4725A8099A00A77B87 /* DynamicMemoryNew.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DynamicMemoryNew.hpp; sourceTree = "<group>"; };
 		C2FEDE4D25A8430800A77B87 /* StringRelated.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringRelated.cpp; sourceTree = "<group>"; };
 		C2FEDE4E25A8430800A77B87 /* StringRelated.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringRelated.hpp; sourceTree = "<group>"; };
+		C2FEDE5B25ABFF6D00A77B87 /* ProgramDesignTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramDesignTask.cpp; sourceTree = "<group>"; };
+		C2FEDE5C25ABFF6D00A77B87 /* ProgramDesignTask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProgramDesignTask.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				C2FEDE4625A8099A00A77B87 /* DynamicMemoryNew.cpp */,
 				C2FEDE4E25A8430800A77B87 /* StringRelated.hpp */,
 				C2FEDE4D25A8430800A77B87 /* StringRelated.cpp */,
+				C2FEDE5C25ABFF6D00A77B87 /* ProgramDesignTask.hpp */,
+				C2FEDE5B25ABFF6D00A77B87 /* ProgramDesignTask.cpp */,
 			);
 			path = ZKChap1;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FEDE4325A70CBB00A77B87 /* funcRelated.cpp in Sources */,
+				C2FEDE5D25ABFF6D00A77B87 /* ProgramDesignTask.cpp in Sources */,
 				C2FEDE4825A8099A00A77B87 /* DynamicMemoryNew.cpp in Sources */,
 				C2FEDE4F25A8430800A77B87 /* StringRelated.cpp in Sources */,
 				C2FEDE2825A3183C00A77B87 /* main.cpp in Sources */,
